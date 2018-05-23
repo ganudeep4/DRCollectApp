@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.getlatlong.MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Cell Tower ID : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="48dp"
+        android:text="Upload Speed : "
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Download Speed :"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/cid"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/us"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/cid"
+        app:layout_constraintTop_toBottomOf="@+id/cid"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ds"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/us"
+        app:layout_constraintTop_toBottomOf="@+id/us"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/stopTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"
+        android:text="Stop Running Background "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ds"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/ds"
+        app:layout_constraintTop_toBottomOf="@+id/stopTask" />
+
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/lat"
+        app:layout_constraintTop_toBottomOf="@+id/lat"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Latitude :"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/stopTask" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Longitude :"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+</android.support.constraint.ConstraintLayout>
